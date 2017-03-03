@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		<script src="app.js" charset="utf-8"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body>
+		<div class="container bs-docs-container">
+			<form class="navbar-form navbar-left" role="search">
+				<div class="form-group">
+					<input type="file" class="btn btn-default" id="file">
+				</div>
+				<button id="reset-center" type="button" class="btn btn-default">Reset center</button>
+				<button id="reset" type="button" class="btn btn-default">Reset</button>
+				<div class="checkbox" data-color="primary">
+					<label>
+						<input type="checkbox" class="btn btn-default" id="draw-radiuses"> Draw radiuses
+					</label>
+				</div>
+				<div class="checkbox" data-color="primary">
+					<label>
+						<input type="checkbox" class="btn btn-default" id="draw-circles"> Draw circles
+					</label>
+				</div>
+				<div class="form-group">
+					<a id="download" class="btn btn-default">Download as image</a>
+				</div>
+			</form>
+			<div class="well">
+				<canvas id="main-canvas"></canvas>
+			</div>
+		</div>
+	</body>
+</html>
